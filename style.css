@@ -1,91 +1,74 @@
+.top{
+	width: 80%;
+	height: 600px;
+	background-color: rgb(156, 176, 243);
+	position: relative;
+	left: 50px;
+	top: 0%;
+	
+
+}
+
 *{
-	background-color: blueviolet;
-	color:  #abccff;
-	box-sizing: border-box;
-	padding: 0%;
-	margin: 0%;
-	
+	font-size: 50px;
 }
-
- /* below code style for box model */
-.box{
-	background-color: beige;
-	width: 300px;
-	height: 300px;
-	padding: 40px;
-	border: 25px solid #000;
-	margin: 15px;
-}
-/* 
-style for flex boxes */
 .container{
-    height: auto;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	background-color: #fff;
-	column-gap: 4%;
-    row-gap: 16px;
-	padding: 15px 0px;
+	width: 80%;
+    height: 500px;
+	border: 5px solid red;
+	position: relative;
+	top: 40px;
+	left: 100px;
 }
-
+.box{
+	width: 60px;
+	height: 60px;
+	border: 3px solid black;
+}
 .one{
-	width:15%;
-	height: 150px;
-	background-color: black;
-
+	background-color: red;
+	position: absolute;
+	right: 100px;
+	top: 100px;
 }
-p{
-	font-size: 15px;
+.two{
+  background-color: green;
+  position: absolute;
+  left: 100px;
+  top: 100px;
 }
-.para{
-	height: 400px;
-	background-color: aqua;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.three{
+	position: absolute;
+	background-color: blue;
+	bottom: 100px;
+	left: 100px;
+}
+.four{
+	background-color: chartreuse;
+	position: absolute;
+	bottom: 100px;
+	right:100px ;
+}
+.center{
+	background-color: blueviolet;
+	position: absolute;
+	top: 240px;
+	left: 400px;
+}
+.fixed{
+	background-color: yellowgreen;
+	position: fixed;
+	right: 0%;
+	bottom: 50px;
+}
+.sticky{
+	/* position: -webkit-sticky; */
+	background-color: violet;
+	position: sticky;
+	left: 100px;
+	top: 0px;
 	
 }
-h1{
-	text-align: end;
+.dummy{
+	padding-bottom: 1000px;
 }
-.aa{
-  order: 24;
-}
-.bb{
-
-order: 15;
-}
-.cc{
-order: 11;
-}
-.dd{
-order: 1;
-}
-.ee{
-order: 2;
-}
-
-
-/* style for forms */
-
-
-.form{
-	background-color: black;
-	width: 100%;
-	height: 400px ;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.input{
-	background-color: #fff;
-	width: 300px;
-	height: 300px;
-	border-radius: 5px;
-	padding: 15px;
-	color: #000;
-	font-size: 20px;
-}
-
