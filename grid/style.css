@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.child1{
+    background-color: red;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    grid-column: span 2;
+    grid-row: span 2; 
+    grid-area: header;
+}
+.child2{
+    background-color: rgba(78, 179, 173, 0.671);
+    grid-area: main;
+}
+.child3{
+    background-color: rgba(110, 179, 78, 0.671);
+    grid-area: aside;
+}
+.child4{
+    background-color: rgba(206, 56, 211, 0.767);
+}
+
+.child5{
+    background-color: rgba(79, 119, 88, 0.671);
+}
+.child6{
+    background-color: rgba(197, 179, 15, 0.671);
+}
+.child7{
+    background-color: rgba(112, 34, 58, 0.671);
+}
+.child8{
+    background-color: rgba(184, 166, 128, 0.671);
+}
+.child9{
+    background-color: rgba(11, 4, 109, 0.671);
+}
+
+
+.main{
+    font-size: 40px;
+    width: 600px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 50px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    
+    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: repeat(3,193px);
+    grid-template-rows: repeat(4,118px);
+    gap: 3px;
+    column-gap: 10px;
+    row-gap: 10px; 
+    gap: 10px;
+   
+    
+}
