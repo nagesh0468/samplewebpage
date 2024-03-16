@@ -50,7 +50,7 @@ li:hover{
 /* banner section styling */
 
 .banner{
-    height: 640px;
+    /* height: 640px; */
     width: 100%;
    
 
@@ -75,7 +75,7 @@ li:hover{
     align-items: center;
     justify-content: center;
     text-align: justify;
-    
+    margin-top: 40px;
 }
 .btn{
     padding: 6px 12px ;
@@ -183,13 +183,14 @@ border-radius: 18px;
 
 /* footer section */
 .footer{
-    height: 500px;
+    
     width: 100%;
     background-color: rgba(144, 216, 126, 0.315);
     padding: 80px 10%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
    
 }
 .footer_left,.footer_right{
@@ -215,4 +216,65 @@ border-radius: 18px;
     text-align: center;
     font-size: 12px;
     font-weight: 300;
+}
+/* .footer_left,.footer_right,.footer_center{
+    width: 30%;
+} */
+
+@media  (max-width: 568px) {
+    .header{
+        height: 45px;
+    }
+    .logo{
+        font-size: 28px;
+    }
+    .nav{
+        display: none;
+    }
+    .banner,.bgImg{
+        height: 330px;
+    }
+    .content{
+        width: 90%;
+        height: 300px;
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .section_title {
+        font-size: 25px;
+    }
+    .img_container{
+        width: 90%;
+    }
+    .footer_left, .footer_right {
+        line-height: 25px;
+    }
+    .footer_left > h1 {
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin-bottom: 25px;
+    }
+    .icons > img{
+        width: 23px;
+    
+    }
+    .footer_logo{
+        width: 90%;
+    
+    }
+    .footer_right{
+        font-weight: 400;
+        margin: auto;
+    }
+    .copy_write{
+      font-weight: 500;
+    }
+    .catagories{
+        padding-top: 15px;
+    }
+    .footer{
+        padding-top: 20px;
+    }
 }
