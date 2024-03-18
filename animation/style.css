@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.circle{
+   
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-color: red;
+   border: 3px solid grey;
+   animation-name: circle ;
+   animation-duration: 8s;
+   animation-iteration-count: 2 ;
+   
+}
+
+@keyframes circle{
+  25%{
+      margin-top: 0 ;
+      margin-left: 500px;
+  }
+  50%{
+    margin-top: 500px;
+    margin-left: 500px;
+  }
+  75%{
+    margin-left: 0%;
+    margin-top: 500px;
+  }
+  100%{
+    margin-top: 0;
+    margin-left: 0%;
+  }
+}
+
