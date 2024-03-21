@@ -1,0 +1,601 @@
+
+@import './responsive.css';
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* header section  */
+
+.header-container{
+    width: 100%;
+    /* position: relative; */
+    
+}
+.header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    z-index: 99;
+    border-bottom: 1px solid #c5c9e6;
+    box-shadow: 0px 2px 5px #c5c9e6;
+}
+.logo{
+    width: 18%;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;  
+    
+}
+.logo-img{
+    width: 151px;
+    height:64px;
+}
+.nav{
+    width: 82%;
+   
+}
+.nav-links{
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-links > li {
+    list-style: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 530;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.nav-links > li:hover{
+    color: rgba(121, 10, 224, 0.918);
+    font-weight: 540;
+}
+
+
+
+    /* banner section  */
+.banner-container{
+    margin-top: 75px;
+    width: 100%;
+   
+}
+.banner{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.banner-img{
+    position: absolute;
+ }
+ .banner-img img{
+     width: 100%;
+     height: 400px;
+     
+ }
+.banner-content{
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    line-height: 43px;
+   
+}
+.banner-content h1{
+    font-size: 43px;
+    color: rgba(194, 159, 226, 0.973);
+}
+.banner-content h3{
+    font-size: 38px;
+    width: 370px;
+    color: #fff;
+}
+.banner-content button{
+    padding: 10px 35px;
+    font-size: 18px;
+    border-radius: 40px;
+    margin-top: 30px;
+}
+
+         /* card section  */
+
+.card-container{
+    width: 100%;
+    padding: 10px 5%;
+    position: relative;
+    top: 450px;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2%;
+    
+}
+.card{
+    width: 335px;
+    height: 250px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+}
+.card:hover{
+    border: none;
+    transform: scaleX(1.01);
+    box-shadow: 0px 5px 10px gray;
+}
+.card-items{
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    bottom: 80px;
+    color:rgba(88, 7, 163, 0.986);
+    font-size: 20px;
+}
+.v-container{
+    margin-top: 500px;
+    padding: 40px 8%;
+    width: 100%;
+
+}
+
+.video-container{
+   width: 100%;
+    display: flex;
+}
+.left-container{
+    padding: 50px 5%;
+}
+.right-container{
+    width: 50%;
+   
+}
+
+.video-title{
+    font-size: 43px;
+    color:rgba(88, 7, 163, 0.986);
+    
+}
+.video-content{
+    margin-top: 20px;
+   
+}
+.content-title{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.line{
+    background-color: #979797;
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+}
+.video-content p{
+    margin-bottom: 20px;
+    font-weight: 10;
+    color: #979797;
+}
+
+
+
+
+.slider1{
+    animation: slider1 12s linear infinite;
+}
+.slider2{
+    animation: slider2 12s linear infinite;
+}
+.slider3{
+    animation: slider3 12s linear infinite;
+}
+.slider4{
+    animation: slider4 12s linear infinite;
+}
+.slider5{
+    animation: slider5 12s linear infinite;
+}
+.slider6{
+    animation: slider6 12s linear infinite;
+}
+
+@keyframes slider1{
+    0%{
+        visibility: visible;
+    }
+    15%{
+        visibility: hidden;
+    }
+    30%{
+        visibility: hidden;
+    }
+    45%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    90%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slider2{
+    0%{
+        visibility: hidden;
+    }
+    15%{
+        visibility: visible;
+    }
+    30%{
+        visibility: hidden;
+    }
+    45%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    90%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slider3{
+    0%{
+        visibility: hidden;
+    }
+    15%{
+        visibility: hidden;
+    }
+    30%{
+        visibility: visible;
+    }
+    45%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    90%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slider4{
+    0%{
+        visibility: hidden;
+    }
+    15%{
+        visibility: hidden;
+    }
+    30%{
+        visibility: hidden;
+    }
+    45%{
+        visibility: visible;
+    }
+    60%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    90%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slider5{
+    0%{
+        visibility: hidden;
+    }
+    15%{
+        visibility: hidden;
+    }
+    30%{
+        visibility: hidden;
+    }
+    45%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    90%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slider6{
+    0%{
+        visibility: hidden;
+    }
+    15%{
+        visibility: hidden;
+    }
+    30%{
+        visibility: hidden;
+    }
+    45%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    90%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slider1{
+    0%{
+        visibility: hidden;
+    }
+    15%{
+        visibility: hidden;
+    }
+    30%{
+        visibility: hidden;
+    }
+    45%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    90%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slider1{
+    0%{
+        visibility: hidden;
+    }
+    15%{
+        visibility: hidden;
+    }
+    30%{
+        visibility: hidden;
+    }
+    45%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    90%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible !important;
+    }
+
+}
+
+.sticker-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.st-container{
+    width: 40%;
+    height: 330px;
+}
+.sticker{
+    width: 90%;
+}
+.sticker img{
+    width: 100%;
+}
+.st-logo{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.st-logo img{
+    width: 150px;
+    height: 100px;
+}
+.img-container{
+    width: 100%;
+    padding: 3px 8%;
+    display:flex;
+    flex-direction: column;
+    row-gap: 400px;
+    }
+.vimgs{
+    width: 100%;
+    display: flex;
+    position: relative;
+    
+}
+.vimgs img{
+    width: 100%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    
+}
+.button button {
+    z-index: 500;
+    position: relative;
+    margin-top: 100px;
+    padding: 8px 60px;
+    border-radius: 30px;
+    border: 2px solid rgba(121, 10, 224, 0.918);
+    color: rgba(121, 10, 224, 0.918); 
+    font-size: 18px;
+    text-align: center;
+}
+.button button:hover{
+    background-color:rgba(121, 10, 224, 0.918) ;
+    color: #fff;
+
+}
+.img1{
+    
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+    transition: 0.3s ;
+}
+.img1:hover{
+    z-index: 8;
+    transform: scale(1.1);
+}
+
+.img2{
+    position: absolute;
+    left: 15%;
+    z-index: 4;
+    transition: 0.3s ;
+}
+.img2:hover{
+    z-index: 8;
+    transform: scale(1.1);
+}
+.img3{
+    position: absolute;
+    left: 30%;
+    z-index: 6;
+    transition: 0.3s ;
+}
+.img3:hover{
+    z-index: 8;
+    transform: scale(1.1);
+}
+.img4{
+    position: absolute;
+    right: 15%;
+    z-index: 4;
+    transition: 0.3s ;
+}
+.img4:hover{
+    z-index: 8;
+    transform: scale(1.1);
+}
+.img5{
+    position: absolute;
+    right: 0%;
+    z-index: 2;
+    transition: 0.3s ;
+}
+.img5:hover{
+    z-index: 8;
+    transform: scale(1.1);
+}
+.pContent{
+    width: 100%;
+    padding:20px 15%;
+}
+.pContent P{
+    text-align: center;
+}
+.secure-container{
+    width: 100%;
+    height: 400px;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+}
+.s-container{
+    width: 100%;
+    height: 330px;
+    background-color: #979797;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.s-banner{
+    height: 330px;
+    width: 100%;
+    background-image: url('./images/secureBanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+}
+.icon1{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 137px;
+    top: 40px;
+}
+.icon1 img{
+    width: 100%;
+}
+.icon2{
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 550px;
+}
+.icon2 img{
+width: 100%;
+}
+.icon3{
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 700px;
+}
+.icon3 img{
+    width: 100%;
+    }
+    

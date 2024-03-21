@@ -221,6 +221,15 @@ border-radius: 18px;
     width: 30%;
 } */
 
+
+.fa-bars{
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
 @media  (max-width: 568px) {
     .header{
         height: 45px;

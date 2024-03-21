@@ -1,0 +1,25 @@
+
+@media (max-width: 568px){
+    .header-container{
+        width: 100%;
+    }
+    .nav{
+        display: none;
+    }
+    .logo{
+        margin-left: 35px;
+    }
+    .cards{
+        row-gap: 25px;
+    }
+    .video-container{
+        flex-direction: column-reverse;
+        
+    }
+    .right-container{
+        display: flex;
+        justify-content: center;
+        margin-left: 25%;
+    }
+    
+}
